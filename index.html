@@ -5,60 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Charis Clone</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <a href="#"><img src="logo.png" id="logo" alt="logo"></a>  
-            <div class="nav">
+    <header>
+        <nav>
+            <a href="#">
+                <img src="/images/logo.png" alt="logo">
+            </a>
+            <ul class="menu">
                 <li><a href="#">Jute Bags</a></li>
                 <li><a href="#">Gifts</a></li>
                 <li><a href="#">About us</a></li>
-            </div>
+            </ul>
             <div class="icons">
-                <div class="vector">
-                    <a href="#"><img id="vector-1" src="Vector-1.png" alt="contact"></a>
-                    <a href="#"><img id="vector-2" src="Vector-2.png" alt="profile"></a>
-                    <a href="#"><img id="vector-3" src="Vector-3.png" alt="cart"></a>
-                </div>
-                <div>
-                    <a href="javascript:void(0)" class="bar">
-                        <span class="bar_lines" id="bar-1"></span>
-                        <span class="bar_lines" id="bar-2"></span>
-                        <span class="bar_lines" id="bar-3"></span>
-                    </a>
-                </div>
+                <a href="#">
+                    <img src="/images/Vector-1.png" alt="contact">
+                </a>
+                <a href="#">
+                    <img src="/images/Vector-2.png" alt="user">
+                </a>
+                <a href="#">
+                    <img src="/images/Vector-3.png" alt="shop">
+                </a>
+                <a href="javascript:void(0)" class="bar">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </a>
             </div>
-        </header>
-        <ul class="toggle_nav">
-            <li><a href="#">Jute Bags</a></li>
-            <li><a href="#">Gifts</a></li>
-            <li><a href="#">About us</a></li>
-        </ul>
-        <main>
-            <div class="caption">
-                <p>
-                    A jute bag can save something?
-                </p>
-            </div>
-            <div>
-                <img src="bag.png" alt="jute bag picture">
-            </div>
-            <div class="caption">
-                <p>
-                    Buy a jute bag and avoid plastic
-                </p>
-            </div>
-        </main>
-    </div>
+        </nav>
+        <div class="center">
+            <h3 class="caption">
+                A jute bag can save something?
+            </h3>
+            <img src="/images/bag.png" alt="jute bag picture">
+            <h3 class="caption">
+                Buy a jute bag and avoid plastic
+            </h3>
+        </div>
+    </header>
     <script>
         const a = document.querySelector('.bar');
-        const b = document.querySelector('.toggle_nav');
+        const b = document.querySelector('.menu');
 
         a.addEventListener('click', ()=>{
             if(b.style.display == 'none'){
-                b.style.display = 'block';
+                b.style.display = 'flex';
             } 
             else{
                 b.style.display = 'none';
